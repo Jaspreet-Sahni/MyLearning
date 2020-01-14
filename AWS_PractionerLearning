@@ -1,1 +1,40 @@
 AWS Learning
+-----------------------------------------------IAM start here------------------------------------------------------------------
+1) IAM (Identity and Access Management)
+IAM is the service where AWS user, uses account and their access to various AWS Services is managed.
+
+Common Usages of AWS
+- Users
+- Groups
+- Access policies
+- Roles
+- User Credentials
+- User Password Policies(must be minimum 8 characters and include 1 number)
+- Multi factor Authentication (MFA) ( A two layer form of login verification that requires a additional rotating code number(Like Morgon RSA device)
+- API Keys for progrmmattic (CLI) Access (Special credential to access AWS via Command Line)
+
+* By default, any new user is created in AWS Account is created Without any access to any AWS service.
+* For a user to access AWS service, permission must be granted to that user, Which is managed by IAM.
+
+Each IAM user has three main Components:
+* A Username
+* A password
+* Permission to Access various AWS services
+
+How to create a IAM User
+
+Flow Top to Down
+
+IAM Dasboard
+|
+Users -->(ADDUSER BTN) --> Access Type Select (AWS Management Console Acess) --> set  Password -->
+-->Attach Existing Policy--> write S3 and click on AmazonS3FullAccess -->  Next(User added) -->(Remember Account ID, USERNAME and Passowrd)
+
+---
+Create a Group which has list of IAM Policy and attach that Group to IAM User, so everybody in that group will have access to the selected List of AWS Services attached with that group
+
+
+Question: You are a user what you need to ask IAM person
+Ans) IAM User Access Policy we need to ask to attach to the user
+
+----------------------------------------------IAM Ends Here-------------------------------
